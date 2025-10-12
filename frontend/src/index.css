@@ -3,3 +3,26 @@
    themes: light --default, dark --prefersdark;
  };
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[data-theme='dark'] body {
+  color: #fff; /* white text */
+  background-color: #262626; /* near-black background */
+}
+
+/* Optional: make sure links and headings are also visible */
+[data-theme='dark'] a,
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6,
+[data-theme='dark'] p,
+[data-theme='dark'] summary,
+[data-theme='dark'] span,
+[data-theme='dark'] div {
+  color: #fff !important;
+}

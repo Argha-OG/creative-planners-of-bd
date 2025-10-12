@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "./../../assets/cpb.jpg";
-import Themecontroller from "../Buttons/Theme-controller";
+import ThemeToggle from "../Buttons/Theme-controller";
 import "./nav.css";
 
 const Navbar = () => {
@@ -57,13 +57,19 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           <li className="">
             <a className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
-              Item 1
+              Home
+            </a>
+          </li>
+          <li className="">
+            <a className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+              About Us
             </a>
           </li>
           <li>
-            <details >
+            <details>
+              
               <summary className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
-                Parent
+                Services
               </summary>
               <ul className="p-2">
                 <li>
@@ -81,13 +87,18 @@ const Navbar = () => {
           </li>
           <li>
             <a className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
-              Item 3
+              Reviews
+            </a>
+          </li>
+          <li>
+            <a className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+              Contact
             </a>
           </li>
         </ul>
       </div>
       <div className="navbar-end space-x-4">
-        <Themecontroller />
+        <ThemeToggle />
         <a className="btn bg-red-500 hover:bg-red-700 rounded-3xl font-bold text-white">
           Book A Consultant
         </a>
