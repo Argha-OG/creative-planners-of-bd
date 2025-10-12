@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 // Import layout and pages
-import { MainLayout } from "./layout/MainLayout.jsx";
+import { MainLayout } from "./Layout/MainLayout.jsx";
 import HomePage from "./pages/homepage/HomePage";
 
 
