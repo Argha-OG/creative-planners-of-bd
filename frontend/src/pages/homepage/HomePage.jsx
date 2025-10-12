@@ -65,6 +65,92 @@ const HomePage = () => {
           <img className=" w-full h-auto rounded-full" src={HeroImg} alt="" />
         </div>
       </section>
+
+      <section className=" lg:grid lg:h-screen lg:place-content-center">
+        <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+          <div className="mx-auto max-w-prose text-center">
+            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+              The CPB Blueprint <br />
+              for
+              <strong className="text-red-500"> Groth </strong>
+            </h1>
+
+            <p className="mt-4 mb-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+              Your all-in-one path to market dominance and measurable ROI.
+            </p>
+          </div>
+          <div className="mt-4 flex justify-center gap-4 sm:mt-6 w-full">
+            <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg  dark:shadow-sm dark:shadow-red-600">
+              <img
+                alt=""
+                src="https://i.pinimg.com/736x/82/02/f6/8202f64a040f6f1caf3cbf93f04e044a.jpg"
+                className="h-56 w-full object-cover"
+              />
+
+              <div className="p-4 sm:p-6">
+                <a href="#">
+                  <h3 className="mt-0.5 text-xl font-bold text-black">
+                    Digital Business Setup
+                  </h3>
+                </a>
+
+                <p className="mt-2 text-sm/relaxed text-gray-500">
+                  We handle your full digital launch: Website, Logo, and Social
+                  Media activation. We provide Content Creation and Ad
+                  Management for instant visibility, with advanced options
+                  including Unlimited Ad Boosting and full platform integration.
+                </p>
+              </div>
+            </article>
+
+            <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg dark:shadow-sm dark:shadow-red-600">
+              <img
+                alt=""
+                src="https://i.pinimg.com/736x/30/92/cd/3092cd1dbe7bb9fcae39fd06ad06bc93.jpg"
+                className="h-56 w-full object-cover"
+              />
+
+              <div className=" p-4 sm:p-6">
+                <a href="#">
+                  <h3 className="mt-0.5 text-xl font-bold text-black">
+                    Monthly Marketing Management
+                  </h3>
+                </a>
+
+                <p className="mt-2 text-sm/relaxed text-gray-500">
+                  Delegate your strategy to our experts. We ensure high-volume
+                  content—25 days of posting, custom designs, and videos—backed
+                  by Audience Research. We provide Moderator Support and
+                  continuously manage all Ad Campaigns.
+                </p>
+              </div>
+            </article>
+
+            <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg dark:shadow-sm dark:shadow-red-600">
+              <img
+                alt=""
+                src="https://i.pinimg.com/1200x/63/74/84/637484376e86a58a4f24ba3019f558b7.jpg"
+                className="h-56 w-full object-cover"
+              />
+
+              <div className=" p-4 sm:p-6">
+                <a href="#">
+                  <h3 className="mt-0.5 text-xl font-bold text-black">
+                    Creative, Printing & Event Services
+                  </h3>
+                </a>
+
+                <p className="mt-2 text-sm/relaxed text-gray-500">
+                  We manage all physical branding and live events. This includes
+                  end-to-end Printing for essentials like Brochures and
+                  Signboards. We also offer full Event Planning & Management,
+                  complete with staffing and Corporate Video Production.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

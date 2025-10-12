@@ -26,3 +26,27 @@
 [data-theme='dark'] div {
   color: #fff !important;
 }
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 1px; /* change width here */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* optional */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* scrollbar color */
+  border-radius: 1px; /* smooth edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none; /* options: auto, thin, none */
+  scrollbar-color: #888 #f1f1f1; /* thumb and track */
+}

@@ -4,7 +4,7 @@ import Footer from "../components/footer/Footer";
 
 export function MainLayout({ children }) {
   return (
-    <div className="">
+    <div className="scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <Navbar />
       <div>{children}</div>
       <Footer />
