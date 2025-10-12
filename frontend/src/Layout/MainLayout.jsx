@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
-import App from "./App";
-import Footer from "./components/footer/Footer";
+import Navbar from "../components/navbar/Navbar";
+import App from "../App";
+import Footer from "../components/footer/Footer";
 
 export function MainLayout({ children }) {
   return (
