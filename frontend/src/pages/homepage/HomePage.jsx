@@ -13,9 +13,11 @@ const HomePage = () => {
               With Smart Marketing Solutions
             </h1>
 
-            <p className="mt-4 text-base text-pretty text-gray-700 text-2xl sm:text-lg/relaxed">
-              Full service Marketing With Business Tech Developer Experts & Event Management agency dedicated to
-              complete brand transformation and measurable results.
+            <p className="mt-4 text-pretty text-gray-700 text-base sm:text-lg/relaxed">
+              Full service Marketing With Business Tech Developer Experts &
+              Event Management agency dedicated to complete brand transformation
+              and measurable results now serving clients across Bangladesh and
+              Malaysia.
             </p>
 
             <div className="mt-4 flex gap-4 sm:mt-6">
@@ -27,7 +29,7 @@ const HomePage = () => {
               </a>
 
               <a
-                className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900"
+                className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-black!"
                 href="#"
               >
                 GET FREE CONSULTATION
