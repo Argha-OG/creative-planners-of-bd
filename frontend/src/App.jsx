@@ -3,8 +3,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 // Import layout and pages
-import MainLayout from "./Layout/MainLayout.jsx";
+import { MainLayout } from "./layout/Mainlayout";
 import HomePage from "./pages/homepage/HomePage";
+
 
 import "./index.css";
 
