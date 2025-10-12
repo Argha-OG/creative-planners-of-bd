@@ -1,16 +1,30 @@
-import React from 'react'
-import Themecontroller from './components/Buttons/Theme-controller'
-import Navbar from './components/navbar/Navbar'
-import MainLayout from './layout/MainLayout'
-import HomePage from './pages/homepage/HomePage'
+import React from "react";
+// Import the components you need for routing
+import { BrowserRouter, Routes, Route } from "react-router";
+
+// Import layout and pages
+import MainLayout from "./layout/MainLayout";
+import HomePage from "./pages/homepage/HomePage";
+
+
 import "./index.css";
 
 const App = () => {
   return (
+    // MainLayout now wraps the Routes, keeping the header/footer constant
     <MainLayout>
-      <HomePage/>
+      <Routes>
+        {/*
+          Define all your routes here. 
+          Only the component in the 'element' prop will swap out.
+        */}
+        <Route path="/" element={<HomePage />} />
+
+        {/* Optional: Add a 404/Not Found route */}
+        <Route path="*" element={<h1>404: Page Not Found</h1>} />
+      </Routes>
     </MainLayout>
   );
-}
+};
 
-export default App
+export default App;
