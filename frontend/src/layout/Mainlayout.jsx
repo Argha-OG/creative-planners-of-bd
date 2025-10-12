@@ -3,7 +3,7 @@ import Navbar from '../components/navbar/Navbar'
 import App from '../App'
 import Footer from '../components/footer/Footer';
 
-function Mainlayout({children}) {
+function MainLayout({children}) {
   return (
     <div className="">
         <Navbar />
@@ -13,4 +13,4 @@ function Mainlayout({children}) {
   );
 }
 
-export default Mainlayout
+export default MainLayout
