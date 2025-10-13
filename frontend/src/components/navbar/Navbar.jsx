@@ -1,4 +1,6 @@
 import React from "react";
+// 🚨 CRITICAL FIX: Ensure this exact import is here!
+import { Link } from "react-router";
 import Logo from "./../../assets/cpb.jpg";
 import ThemeToggle from "../Buttons/Theme-controller";
 import "./nav.css";
@@ -29,79 +31,112 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow "
           >
+            {/* MOBILE MENU LINKS */}
             <li>
-              <a className="">Item 1</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <details open>
+                <summary>Services</summary>
+                <ul className="p-2">
+                  <li>
+                    <Link to="/services/submenu1">Submenu 1</Link>
+                  </li>
+                  <li>
+                    <Link to="/services/submenu2">Submenu 2</Link>
+                  </li>
+                </ul>
+              </details>
             </li>
             <li>
-              <a>Item 3</a>
+              <Link to="/reviews">Reviews</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl text-red-600 overflow-hidden">
+        {/* LOGO LINK */}
+        <Link
+          to="/"
+          className="btn btn-ghost text-xl text-red-600 overflow-hidden"
+        >
           <img src={Logo} alt="CPB" className="h-auto w-10" />
           Creative Planners Of Bangladesh
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
+          {/* DESKTOP MENU LINKS */}
           <li className="">
-            <a href="/" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+            <Link
+              to="/"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li className="">
-            <a href="/About" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+            <Link
+              to="/about"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+            >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
             <details>
-              
+              {/* Note: summary uses Link if it is intended to also navigate */}
               <summary className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
                 Services
               </summary>
               <ul className="p-2">
                 <li>
-                  <a href="/Services" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+                  <Link
+                    to="/services"
+                    className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+                  >
                     Submenu 1
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/Services" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+                  <Link
+                    to="/services"
+                    className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+                  >
                     Submenu 2
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <a href="/Reviews" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+            <Link
+              to="/reviews"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+            >
               Reviews
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/Contact" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+            <Link
+              to="/contact"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+            >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end space-x-4">
         <ThemeToggle />
-        <a className="btn bg-red-500 hover:bg-red-700 rounded-3xl font-bold text-white">
+        {/* CTA BUTTON LINK */}
+        <Link
+          to="/consultant"
+          className="btn bg-red-500 hover:bg-red-700 rounded-3xl font-bold text-white"
+        >
           Book A Consultant
-        </a>
+        </Link>
       </div>
     </div>
   );
