@@ -56,12 +56,12 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li className="">
-            <a className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+            <a href="/" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
               Home
             </a>
           </li>
           <li className="">
-            <a className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+            <a href="/About" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
               About Us
             </a>
           </li>
@@ -73,12 +73,12 @@ const Navbar = () => {
               </summary>
               <ul className="p-2">
                 <li>
-                  <a className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+                  <a href="/Services" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
                     Submenu 1
                   </a>
                 </li>
                 <li>
-                  <a className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+                  <a href="/Services" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
                     Submenu 2
                   </a>
                 </li>
@@ -86,12 +86,12 @@ const Navbar = () => {
             </details>
           </li>
           <li>
-            <a className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+            <a href="/Reviews" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
               Reviews
             </a>
           </li>
           <li>
-            <a className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
+            <a href="/Contact" className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
               Contact
             </a>
           </li>
