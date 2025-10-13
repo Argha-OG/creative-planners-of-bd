@@ -72,7 +72,7 @@ const HomePage = () => {
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
               The CPB Blueprint <br />
               for
-              <strong className="text-red-500"> Groth </strong>
+              <strong className="text-red-500"> Growth </strong>
             </h1>
 
             <p className="mt-4 mb-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
