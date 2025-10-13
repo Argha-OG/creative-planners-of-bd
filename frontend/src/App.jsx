@@ -8,6 +8,7 @@ import HomePage from "./pages/homepage/HomePage";
 
 
 import "./index.css";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
 
         {/* Optional: Add a 404/Not Found route */}
-        <Route path="*" element={<h1>404: Page Not Found</h1>} />
+        <Route path="*" element={<ErrorPage/>} />
       </Routes>
     </MainLayout>
   );
