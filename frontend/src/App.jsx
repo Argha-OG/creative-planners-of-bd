@@ -20,9 +20,13 @@ const App = () => {
           Only the component in the 'element' prop will swap out.
         */}
         <Route path="/" element={<HomePage />} />
+        <Route path="/About" element={<ErrorPage />} />
+        <Route path="/Services" element={<ErrorPage />} />
+        <Route path="/Reviews" element={<ErrorPage />} />
+        <Route path="/Contact" element={<ErrorPage />} />
 
         {/* Optional: Add a 404/Not Found route */}
-        <Route path="*" element={<ErrorPage/>} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </MainLayout>
   );
