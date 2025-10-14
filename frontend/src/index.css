@@ -26,6 +26,9 @@
 [data-theme='dark'] div {
   color: #fff !important;
 }
+[data-theme='dark'] .chooseus {
+  background: #333333 !important;
+}
 
 html {
   scroll-behavior: smooth;

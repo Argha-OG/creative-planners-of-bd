@@ -20,7 +20,7 @@ export default function ThemeToggle() {
   };
 
   return (
-    <label className="swap swap-rotate transition-colors duration-1000">
+    <label className="swap swap-rotate transition-colors duration-300">
       {/* this hidden checkbox controls the state */}
       <input
         type="checkbox"
