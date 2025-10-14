@@ -1,5 +1,6 @@
 import React from "react";
 import HeroImg from "./../../assets/herox.jpg";
+import TeamCaro from "../../components/carousel/TeamCaro";
 
 const HomePage = () => {
   return (
@@ -387,6 +388,27 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className=" lg:grid lg:h-screen lg:place-content-center">
+        <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+          <div className="mx-auto max-w-prose text-center">
+            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+              Meet The
+              <strong className="text-red-600"> CPB </strong>
+              Team
+            </h1>
+
+            <p className="mt-4 mb-8 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+              Led by over 20+ professional business advisors, designers, and
+              strategists, we bring comprehensive expertise to transform your
+              brand.
+            </p>
+          </div>
+          <div className="h-fit w-full flex justify-center items-center">
+            <TeamCaro />
           </div>
         </div>
       </section>
