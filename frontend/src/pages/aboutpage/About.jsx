@@ -7,7 +7,7 @@ const About = () => {
         <a href="#" className="group relative block">
           <img
             alt=""
-            src="https://i.pinimg.com/originals/23/cd/cb/23cdcbb4e77524b09d5f7e772b5ff53f.gif"
+            src="https://i.pinimg.com/originals/26/45/47/2645475a9eef90f4a1fe67b76ae7d9fa.gif"
             className="absolute inset-0 h-full w-full object-cover transition-opacity group-hover:opacity-95 rounded-4xl"
           />
 
