@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 // Import layout and pages
 import { MainLayout } from "./Layout/MainLayout.jsx";
 import HomePage from "./pages/homepage/HomePage";
+import About from "./pages/aboutpage/About.jsx";
 
 
 import "./index.css";
@@ -20,7 +21,7 @@ const App = () => {
           Only the component in the 'element' prop will swap out.
         */}
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<ErrorPage />} />
+        <Route path="/about" element={<About />} />
         <Route path="/services" element={<ErrorPage />} />
         <Route path="/reviews" element={<ErrorPage />} />
         <Route path="/contact" element={<ErrorPage />} />
