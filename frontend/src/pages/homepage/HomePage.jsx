@@ -412,6 +412,121 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      <section className=" lg:grid lg:h-screen lg:place-content-center">
+        <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+          <div className="mx-auto max-w-prose text-center">
+            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+              <strong className="text-red-600"> Questions You May Have </strong>
+            </h1>
+
+            <p className="mt-4 mb-8 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+              Quick answers about our complete service ecosystem and approach to
+              growth.
+            </p>
+          </div>
+          <div className="h-fit text-pretty content-center flex justify-center items-center">
+            <div className="join join-vertical bg-base-100 flex  justify-center items-center">
+              <div className="collapse collapse-arrow join-item border-base-300 border rounded-t-2xl">
+                <input type="radio" name="my-accordion-4" defaultChecked />
+                <div className="collapse-title font-semibold">
+                  1. What is the scope of your services?
+                </div>
+                <div className="collapse-content text-sm bg-red-200 chooseus">
+                  We offer Complete Digital & Offline Branding Solutions. This
+                  ranges from Digital Business Setup and Monthly Marketing
+                  Management to Creative & Printing Services and Event Planning
+                  & Management
+                </div>
+              </div>
+              <div className="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div className="collapse-title font-semibold">
+                  2. Who will manage my campaigns and strategy?
+                </div>
+                <div className="collapse-content text-sm bg-red-200 chooseus">
+                  Your campaigns are managed by an Experienced Team of 20+
+                  professional business advisors and strategists. We utilize
+                  specialized Audience Research & Engagement Strategy to deliver
+                  measurable results.
+                </div>
+              </div>
+              <div className="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div className="collapse-title font-semibold">
+                  3. How much content is provided monthly?
+                </div>
+                <div className="collapse-content text-sm bg-red-200 chooseus">
+                  Our Standard monthly package includes 25 Days of Active
+                  Posting, 25 Custom Poster Designs, and 5 Promotional Videos.
+                  Premium packages offer 30 Days of Full Social Media Coverage
+                  and Unlimited Poster & Video Posting.
+                </div>
+              </div>
+              <div className="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div className="collapse-title font-semibold">
+                  4. Is your client support truly 24/7?
+                </div>
+                <div className="collapse-content text-sm bg-red-200 chooseus">
+                  Yes. We guarantee 24/7 Client Support. Our salary-based
+                  moderator team ensures immediate replies to messages,
+                  continuous client engagement, and timely reports.
+                </div>
+              </div>
+              <div className="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div className="collapse-title font-semibold">
+                  5. What is included in the Digital Business Setup starter
+                  packages?
+                </div>
+                <div className="collapse-content text-sm bg-red-200 chooseus">
+                  Starter packages cover Professional Logo Design, Website
+                  Setup, and social media activation (Facebook, TikTok,
+                  Instagram). They include Content Creation and Ad Campaign
+                  Management , with advanced options offering Unlimited Ad
+                  Campaign & Boosting.
+                </div>
+              </div>
+              <div className="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div className="collapse-title font-semibold">
+                  6. Beyond digital, what physical/creative services do you
+                  offer?
+                </div>
+                <div className="collapse-content text-sm bg-red-200 chooseus">
+                  We provide end-to-end Creative & Printing Services for
+                  physical assets like Business Cards, Brochures, Signboards,
+                  and Corporate Catalogs. We also handle Event Planning &
+                  Management and Corporate Video Production.
+                </div>
+              </div>
+              <div className="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div className="collapse-title font-semibold">
+                  7. How affordable and transparent are your packages?
+                </div>
+                <div className="collapse-content text-sm bg-red-200 chooseus">
+                  We offer Affordable Packages for every business size with
+                  guaranteed Transparent Service & Reporting. You always receive
+                  full visibility into budget allocation and performance
+                  metrics.
+                </div>
+              </div>
+              <div className="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div className="collapse-title font-semibold">
+                  8. Where are your company headquarters located?
+                </div>
+                <div className="collapse-content text-sm bg-red-200 chooseus">
+                  Our Head Office is in Kuala Lumpur, Malaysia. We also maintain
+                  a presence with our Bangladesh Office in Dhaka.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
