@@ -40,10 +40,19 @@ const Navbar = () => {
                 <summary>Services</summary>
                 <ul className="p-2">
                   <li>
-                    <Link to="/services/submenu1">Submenu 1</Link>
+                    <Link to="/services/submenu1">Core Services</Link>
                   </li>
                   <li>
-                    <Link to="/services/submenu2">Submenu 2</Link>
+                    <Link to="/services/submenu2">Service Package</Link>
+                  </li>
+                  <li>
+                    <Link to="/services/submenu2">Social Media Management</Link>
+                  </li>
+                  <li>
+                    <Link to="/services/submenu2">Website Development</Link>
+                  </li>
+                  <li>
+                    <Link to="/services/submenu2">Graphics Design</Link>
                   </li>
                 </ul>
               </details>
@@ -96,7 +105,7 @@ const Navbar = () => {
                     to="/services"
                     className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
                   >
-                    Submenu 1
+                    Core Services
                   </Link>
                 </li>
                 <li>
@@ -104,7 +113,31 @@ const Navbar = () => {
                     to="/services"
                     className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
                   >
-                    Submenu 2
+                    Service Package
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services"
+                    className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+                  >
+                    Social Media Management
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services"
+                    className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+                  >
+                    Website Development
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services"
+                    className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+                  >
+                    Graphics Design
                   </Link>
                 </li>
               </ul>
