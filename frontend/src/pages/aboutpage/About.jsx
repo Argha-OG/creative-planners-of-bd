@@ -2,13 +2,13 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="">
-      <section className="lg:grid lg:h-screen lg:place-content-center overflow-hidden w-full">
+    <div className="flex flex-col justify-center items-center">
+      <section className="lg:grid lg:h-screen lg:place-content-center overflow-hidden w-4/5">
         <a href="#" className="group relative block">
           <img
             alt=""
             src="https://i.pinimg.com/originals/23/cd/cb/23cdcbb4e77524b09d5f7e772b5ff53f.gif"
-            className="absolute inset-0 h-96 w-full object-cover transition-opacity group-hover:opacity-95 rounded-4xl"
+            className="absolute inset-0 h-full w-full object-cover transition-opacity group-hover:opacity-95 rounded-4xl"
           />
 
           <div className="relative p-10 sm:p-6 lg:p-8">
@@ -21,12 +21,16 @@ const About = () => {
               complete business ecosystem.
             </p>
 
-            <div className="mt-32 sm:mt-48 lg:mt-64">
+            <div className="mt-28 sm:mt-40 lg:mt-44">
               <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                 <p className="text-sm text-white">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Omnis perferendis hic asperiores quibusdam quidem voluptates
-                  doloremque reiciendis nostrum harum. Repudiandae?
+                  We are the Creative Planners of Bangladesh, dedicated to
+                  transforming your brand into a complete ecosystem. We fuse
+                  cutting-edge digital strategy with flawless event execution,
+                  ensuring your brand not only grows but dominates. Our 20+
+                  experts manage everything from web setup to global campaigns,
+                  offering measurable results and 24/7 transparent support. We
+                  don't just plan; we build legacies.
                 </p>
               </div>
             </div>
