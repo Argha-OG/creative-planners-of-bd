@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImg from "./../../assets/herox.jpg";
 import TeamCaro from "../../components/carousel/TeamCaro";
+import LogoCaro from "../../components/carousel/LogoCaro";
 
 const HomePage = () => {
   return (
@@ -66,7 +67,9 @@ const HomePage = () => {
           <img className=" w-full h-auto rounded-full" src={HeroImg} alt="" />
         </div>
       </section>
-
+      <section className="flex flex-col justify-center items-center">
+        <LogoCaro />
+      </section>
       <section className=" lg:grid lg:h-screen lg:place-content-center">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-prose text-center">

@@ -9,3 +9,8 @@ margin-top: 60px;
  height: 400px;
  width: auto;
 }
+
+.marquee-image {
+  /* Add margin to the right of each image */
+  margin-right: 20px; 
+}

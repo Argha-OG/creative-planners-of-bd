@@ -1,4 +1,6 @@
 import React from 'react'
+import './About.css'
+import LogoCaro from '../../components/carousel/LogoCaro';
 
 const About = () => {
   return (
@@ -37,6 +39,8 @@ const About = () => {
           </div>
         </a>
       </section>
+      <div className='my-8 w-4/5'><LogoCaro /></div>
+      
     </div>
   );
 }
