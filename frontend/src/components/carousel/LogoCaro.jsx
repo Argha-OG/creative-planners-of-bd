@@ -32,7 +32,7 @@ const LogoCaro = () => {
   return (
     <Marquee
       autoFill={true}
-      gradient={true}
+      gradient={false}
       // Use a light gray for the gradient color
       gradientColor="#f8f8f8"
       gradientWidth={100} // A smaller, more typical width
@@ -42,7 +42,7 @@ const LogoCaro = () => {
         // Key is required when mapping
         // 1. Give the wrapper a fixed width (e.g., w-32)
         // 2. Apply horizontal margin to the wrapper (e.g., mx-4)
-        <div key={index} className="w-32 mx-1">
+        <div key={index} className="w-32 mx-1 ">
           <img
             // Remove w-full and h-26. Use h-full or h-20 for a set height.
             // object-contain ensures the logo fits within the wrapper div.
