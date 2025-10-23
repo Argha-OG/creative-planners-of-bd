@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
 import LogoCaro from '../../components/carousel/LogoCaro';
+import TeamCaro from '../../components/carousel/TeamCaro';
 
 const About = () => {
   return (
@@ -39,8 +40,105 @@ const About = () => {
           </div>
         </a>
       </section>
-      <div className='my-8 w-4/5'><LogoCaro /></div>
-      
+      <div className="w-4/5">
+        <LogoCaro />
+      </div>
+
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 mt-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+            <div>
+              <div className="max-w-prose md:max-w-none">
+                <h1 className="text-3xl font-bold text-red-500 dark:text-red-600! sm:text-3xl">
+                  Our Global Mission
+                </h1>
+
+                <p className="mt-4 text-gray-700">
+                  <strong>
+                    To build your brand, connect it with the right audience, and
+                    deliver measurable business results.
+                  </strong>{" "}
+                  <br />
+                  <br />
+                  We are proud to have expanded our footprint to serve clients
+                  globally. This commitment to growth is solidified by the
+                  establishment of our{" "}
+                  <strong>Head Office in Kuala Lumpur, Malaysia</strong>,
+                  complementing our dedicated{" "}
+                  <strong>Bangladesh Office in Dhaka</strong>. This dual
+                  presence strengthens our capacity to deliver world-class
+                  solutions across South and Southeast Asia.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <img
+                src="https://i.pinimg.com/736x/3f/6a/3a/3f6a3a60d1dfeeeca1a2e771c9b8fe69.jpg"
+                className="rounded-2xl border-4 border-red-500"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+            <div>
+              <img
+                src="https://i.pinimg.com/originals/9c/f7/31/9cf731acaa5e83195600ddf8965eb864.gif"
+                className="rounded-2xl border-4 border-red-500"
+                alt=""
+              />
+            </div>
+            <div>
+              <div className="max-w-prose md:max-w-none">
+                <h1 className="text-3xl font-bold text-red-500 dark:text-red-600! sm:text-3xl">
+                  Who We Are
+                </h1>
+
+                <p className="mt-4 text-gray-700">
+                  <strong>Your Full-Service Creative Partner</strong> <br />
+                  <br />
+                  <strong>Creative Planners of Bangladesh (CPB)</strong> is a{" "}
+                  <strong>
+                    full-service marketing and event management agency{" "}
+                  </strong>
+                  committed to helping brands achieve digital growth and reach
+                  their audiences effectively. We don't just execute tasks; we
+                  deliver complete brand transformation, managing everything
+                  from initial digital setup to advanced audience engagement and
+                  lead generation. We are the single partner you need for all
+                  your digital, creative, printing, and event management needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className=" lg:grid lg:h-screen lg:place-content-center">
+        <div className="mx-auto w-screen max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+          <div className="mx-auto max-w-prose text-center">
+            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+              Meet The
+              <strong className="text-red-600"> CPB </strong>
+              Team
+            </h1>
+
+            <p className="mt-4 mb-8 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
+              Led by over 20+ professional business advisors, designers, and
+              strategists, we bring comprehensive expertise to transform your
+              brand.
+            </p>
+          </div>
+          <div className="h-fit w-full flex justify-center items-center">
+            <TeamCaro />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
