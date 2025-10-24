@@ -36,26 +36,7 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <details open>
-                <summary>Services</summary>
-                <ul className="p-2">
-                  <li>
-                    <Link to="/services/submenu1">Core Services</Link>
-                  </li>
-                  <li>
-                    <Link to="/services/submenu2">Service Package</Link>
-                  </li>
-                  <li>
-                    <Link to="/services/submenu2">Social Media Management</Link>
-                  </li>
-                  <li>
-                    <Link to="/services/submenu2">Website Development</Link>
-                  </li>
-                  <li>
-                    <Link to="/services/submenu2">Graphics Design</Link>
-                  </li>
-                </ul>
-              </details>
+              <Link to="/services">Serivces</Link>
             </li>
             <li>
               <Link to="/reviews">Reviews</Link>
@@ -93,55 +74,13 @@ const Navbar = () => {
               About Us
             </Link>
           </li>
-          <li>
-            <details>
-              {/* Note: summary uses Link if it is intended to also navigate */}
-              <summary className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm">
-                Services
-              </summary>
-              <ul className="p-2">
-                <li>
-                  <Link
-                    to="/services"
-                    className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
-                  >
-                    Core Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services"
-                    className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
-                  >
-                    Service Package
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services"
-                    className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
-                  >
-                    Social Media Management
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services"
-                    className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
-                  >
-                    Website Development
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services"
-                    className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
-                  >
-                    Graphics Design
-                  </Link>
-                </li>
-              </ul>
-            </details>
+          <li className="">
+            <Link
+              to="/services"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+            >
+              Services
+            </Link>
           </li>
           <li>
             <Link

@@ -7,6 +7,7 @@ import { MainLayout } from "./Layout/MainLayout.jsx";
 import HomePage from "./pages/homepage/HomePage";
 import About from "./pages/aboutpage/About.jsx";
 import Contact from "./pages/contact/Contact.jsx";
+import Services from "./pages/services/Services.jsx";
 
 
 import "./index.css";
@@ -23,7 +24,7 @@ const App = () => {
         */}
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<ErrorPage />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/reviews" element={<ErrorPage />} />
         <Route path="/contact" element={<Contact />} />
 
