@@ -104,8 +104,9 @@ const Navbar = () => {
         <ThemeToggle />
         {/* CTA BUTTON LINK */}
         <Link
-          to="/consultant"
+          to="https://wa.me/601121404200?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
           className="btn bg-red-500 hover:bg-red-700 rounded-3xl font-bold text-white"
+          target="_blank"
         >
           Book A Consultant
         </Link>

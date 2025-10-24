@@ -49,7 +49,8 @@ const Services = () => {
 
                   <a
                     className="mt-4 block rounded-sm border border-red-500 bg-red-500 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-red-500 focus:ring-3 focus:outline-hidden sm:mt-6"
-                    href="#"
+                    href="https://wa.me/601121404200?text=I%20am%20interested%20in%20the%20Digital%20Launch%20Package.%20I%20need%20a%20new%20Logo%2C%20Website%2C%20and%20Social%20Setup.%0A%0AClient%20Name%3A%0AEmail%3A"
+                    target="_blank"
                   >
                     Get Started
                   </a>
@@ -241,7 +242,8 @@ const Services = () => {
 
                   <a
                     className="mt-4 block rounded-sm border border-red-500 bg-red-500 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-red-500 focus:ring-3 focus:outline-hidden sm:mt-6"
-                    href="#"
+                    href="https://wa.me/601121404200?text=I%20would%20like%20details%20on%20your%20Monthly%20Marketing%20Management%20Packages.%20Please%20send%20me%20info%20on%20the%20Pro%20Managed%20Growth%20tier.%0A%0AClient%20Name%3A%0ACompany%3A"
+                    target="_blank"
                   >
                     Get Started
                   </a>
@@ -434,7 +436,8 @@ const Services = () => {
 
                   <a
                     className="mt-4 block rounded-sm border border-red-500 bg-red-500 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-red-500 focus:ring-3 focus:outline-hidden sm:mt-6"
-                    href="#"
+                    href="https://wa.me/601121404200?text=I%20need%20a%20quote%20for%20Creative%20Services%2FEvent%20Management.%20I%20am%20looking%20for%20%5BBrochures%2FVideo%2FEvent%5D.%0A%0APlease%20advise%20on%20next%20steps%3A"
+                    target="_blank"
                   >
                     Get Started
                   </a>

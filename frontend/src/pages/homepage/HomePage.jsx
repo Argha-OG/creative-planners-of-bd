@@ -50,14 +50,14 @@ const HomePage = () => {
             <div className="mt-4 flex gap-4 sm:mt-6">
               <a
                 className="inline-block rounded border border-red-600 bg-red-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-red-700"
-                href="#"
+                href="https://wa.me/601121404200?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
               >
                 START YOUR DIGITAL GROWTH
               </a>
 
               <a
                 className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-black!"
-                href="#"
+                href="https://wa.me/601139638206?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
               >
                 GET FREE CONSULTATION
               </a>
@@ -92,7 +92,7 @@ const HomePage = () => {
               />
 
               <div className="p-4 sm:p-6">
-                <a href="#">
+                <a href="/services">
                   <h3 className="mt-0.5 text-xl font-bold text-black">
                     Digital Business Setup
                   </h3>
@@ -115,7 +115,7 @@ const HomePage = () => {
               />
 
               <div className=" p-4 sm:p-6">
-                <a href="#">
+                <a href="/services">
                   <h3 className="mt-0.5 text-xl font-bold text-black">
                     Monthly Marketing Management
                   </h3>
@@ -138,7 +138,7 @@ const HomePage = () => {
               />
 
               <div className=" p-4 sm:p-6">
-                <a href="#">
+                <a href="/services">
                   <h3 className="mt-0.5 text-xl font-bold text-black">
                     Creative, Printing & Event Services
                   </h3>

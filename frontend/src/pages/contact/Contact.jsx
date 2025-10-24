@@ -19,7 +19,8 @@ const Contact = () => {
             <div className="mt-4 flex justify-center gap-4 sm:mt-6">
               <a
                 className="inline-block rounded border border-red-600 bg-red-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-red-700"
-                href="#"
+                href="https://wa.me/601139638206?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
+                target='_blank'
               >
                 Get In Touch Now
               </a>
