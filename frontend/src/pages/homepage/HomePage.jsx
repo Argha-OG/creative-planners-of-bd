@@ -2,6 +2,7 @@ import React from "react";
 import HeroImg from "./../../assets/herox.jpg";
 import TeamCaro from "../../components/carousel/TeamCaro";
 import LogoCaro from "../../components/carousel/LogoCaro";
+import { Link } from "react-router";
 
 const HomePage = () => {
   return (
@@ -94,11 +95,11 @@ const HomePage = () => {
               />
 
               <div className="p-4 sm:p-6">
-                <a href="/services">
+                <Link to="/services">
                   <h3 className="mt-0.5 text-xl font-bold text-black">
                     Digital Business Setup
                   </h3>
-                </a>
+                </Link>
 
                 <p className="mt-2 text-sm/relaxed text-gray-500">
                   We handle your full digital launch: Website, Logo, and Social
@@ -117,11 +118,11 @@ const HomePage = () => {
               />
 
               <div className=" p-4 sm:p-6">
-                <a href="/services">
+                <Link to="/services">
                   <h3 className="mt-0.5 text-xl font-bold text-black">
                     Monthly Marketing Management
                   </h3>
-                </a>
+                </Link>
 
                 <p className="mt-2 text-sm/relaxed text-gray-500">
                   Delegate your strategy to our experts. We ensure high-volume
@@ -140,11 +141,11 @@ const HomePage = () => {
               />
 
               <div className=" p-4 sm:p-6">
-                <a href="/services">
+                <Link to="/services">
                   <h3 className="mt-0.5 text-xl font-bold text-black">
                     Creative, Printing & Event Services
                   </h3>
-                </a>
+                </Link>
 
                 <p className="mt-2 text-sm/relaxed text-gray-500">
                   We manage all physical branding and live events. This includes
