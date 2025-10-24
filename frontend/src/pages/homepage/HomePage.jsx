@@ -30,7 +30,9 @@ const HomePage = () => {
               We Are Now In Malaysia
             </p>
           </div>
-          <button className="btn btn-sm">Explore Our services</button>
+          <button className="btn btn-sm">
+            <Link to="/services#">Explore Our services</Link>
+          </button>
         </div>
 
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 md:grid md:grid-cols-2 md:items-center md:gap-4 lg:px-8 lg:py-32 ">
