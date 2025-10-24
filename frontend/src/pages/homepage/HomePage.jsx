@@ -51,6 +51,7 @@ const HomePage = () => {
               <a
                 className="inline-block rounded border border-red-600 bg-red-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-red-700"
                 href="https://wa.me/601121404200?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
+                target="_blank"
               >
                 START YOUR DIGITAL GROWTH
               </a>
@@ -58,6 +59,7 @@ const HomePage = () => {
               <a
                 className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-black!"
                 href="https://wa.me/601139638206?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
+                target="_blank"
               >
                 GET FREE CONSULTATION
               </a>
