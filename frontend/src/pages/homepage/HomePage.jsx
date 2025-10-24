@@ -95,7 +95,7 @@ const HomePage = () => {
               />
 
               <div className="p-4 sm:p-6">
-                <Link to="/services">
+                <Link to="/services#">
                   <h3 className="mt-0.5 text-xl font-bold text-black">
                     Digital Business Setup
                   </h3>
@@ -118,7 +118,7 @@ const HomePage = () => {
               />
 
               <div className=" p-4 sm:p-6">
-                <Link to="/services">
+                <Link to="/services#">
                   <h3 className="mt-0.5 text-xl font-bold text-black">
                     Monthly Marketing Management
                   </h3>
@@ -141,7 +141,7 @@ const HomePage = () => {
               />
 
               <div className=" p-4 sm:p-6">
-                <Link to="/services">
+                <Link to="/services#">
                   <h3 className="mt-0.5 text-xl font-bold text-black">
                     Creative, Printing & Event Services
                   </h3>
