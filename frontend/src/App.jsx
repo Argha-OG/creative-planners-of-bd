@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { MainLayout } from "./Layout/MainLayout.jsx";
 import HomePage from "./pages/homepage/HomePage";
 import About from "./pages/aboutpage/About.jsx";
+import Contact from "./pages/contact/Contact.jsx";
 
 
 import "./index.css";
@@ -24,7 +25,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<ErrorPage />} />
         <Route path="/reviews" element={<ErrorPage />} />
-        <Route path="/contact" element={<ErrorPage />} />
+        <Route path="/contact" element={<Contact />} />
 
         {/* Optional: Add a 404/Not Found route */}
         <Route path="*" element={<ErrorPage />} />
