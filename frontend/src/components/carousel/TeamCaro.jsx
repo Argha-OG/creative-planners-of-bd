@@ -32,7 +32,17 @@ const TeamCaro = () => {
       grabCursor={true}
       centeredSlides={true}
       loop="true"
-      slidesPerView="3"
+      breakpoints={{
+        0: {
+          slidesPerView: 1, // 👈 1 slide on mobile
+        },
+        640: {
+          slidesPerView: 2, // 👈 2 slides on small tablets
+        },
+        1024: {
+          slidesPerView: 3, // 👈 3 slides on large screens
+        },
+      }}
       coverflowEffect={{
         rotate: 0,
         stretch: 0,

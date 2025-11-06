@@ -9,33 +9,10 @@ const HomePage = () => {
     <div className="">
       <section className="lg:grid lg:h-screen lg:max-w-full lg:place-content-center overflow-hidden sm:max-w-full">
         <div
-          role="alert"
-          className="alert alert-vertical sm:alert-horizontal mt-14 text-red-500 rounded-full"
+          className="mx-auto w-screen px-4 py-16 sm:px-6 sm:py-24 
+                flex flex-col-reverse md:grid md:grid-cols-2 md:items-center md:gap-4 
+                lg:px-8 lg:py-32 justify-center"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="stroke-info h-6 w-6 shrink-0 text-red-500 dark:text-red-600"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <div>
-            <p className="font-bold text-xl text-red-500 dark:text-red-600!">
-              We Are Now In Malaysia
-            </p>
-          </div>
-          <button className="btn btn-sm">
-            <Link to="/services#">Explore Our services</Link>
-          </button>
-        </div>
-
-        <div className="mx-auto w-screen px-4 py-16 sm:px-6 sm:py-24 md:grid md:grid-cols-2 md:items-center md:gap-4 lg:px-8 lg:py-32 ">
           <div className="max-w-prose text-left">
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl ">
               We Grow Your
@@ -69,7 +46,11 @@ const HomePage = () => {
             </div>
           </div>
 
-          <img className=" w-full h-auto rounded-full sm:mt-2" src={HeroImg} alt="" />
+          <img
+            className=" w-full h-auto rounded-full sm:mt-2"
+            src={HeroImg}
+            alt=""
+          />
         </div>
       </section>
       <section className="flex flex-col justify-center items-center">
