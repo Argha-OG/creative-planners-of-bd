@@ -36,6 +36,9 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
               <Link to="/services">Serivces</Link>
             </li>
             <li>
@@ -52,8 +55,7 @@ const Navbar = () => {
           className="btn btn-ghost text-xl text-red-600 overflow-hidden"
         >
           <img src={Logo} alt="CPB" className="h-auto w-10" />
-          <div className="hidden sm:block">
-          Creative Planners Of Bangladesh</div>
+          <div className="hidden sm:block">Creative Planners Of Bangladesh</div>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

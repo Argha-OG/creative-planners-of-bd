@@ -6,7 +6,7 @@ import TeamCaro from '../../components/carousel/TeamCaro';
 const About = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <section className="lg:grid my-16 lg:place-content-center overflow-hidden w-4/5 border-4 border-red-500 rounded-4xl">
+      <section className="lg:grid my-16 lg:place-content-center overflow-hidden hidden sm:visible w-4/5 border-4 border-red-500 rounded-4xl">
         <a href="#" className="group relative block">
           <img
             alt=""
@@ -40,13 +40,13 @@ const About = () => {
           </div>
         </a>
       </section>
-      <div className="w-4/5">
+      <div className="w-4/5 mt-6">
         <LogoCaro />
       </div>
 
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 mt-4">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+          <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:items-center md:gap-8 gap-4">
             <div>
               <div className="max-w-prose md:max-w-none">
                 <h1 className="text-3xl font-bold text-red-500 dark:text-red-600! sm:text-3xl">
