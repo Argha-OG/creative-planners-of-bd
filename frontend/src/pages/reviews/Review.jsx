@@ -273,7 +273,7 @@ const Review = () => {
             href="https://wa.me/601139638206?text=I%20saw%20your%20reviews%20and%20want%20to%20book%20a%20consultation."
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-block font-bold py-3 px-6 shadow-lg transition duration-150 rounded-full border-2 hover:border-white hover:text-white border-red-500 bg-white text-center text-red-600 hover:bg-transparent focus:ring-3 focus:outline-hidden"
+            className="mt-6 inline-block font-bold py-3 px-6 shadow-lg transition duration-150 rounded-full border-2  hover:border-white hover:text-white! border-red-500 bg-white text-center text-red-600 dark:text-red-600! hover:bg-transparent focus:ring-3 focus:outline-hidden"
           >
             Book Your Free Consultation Now
           </a>
