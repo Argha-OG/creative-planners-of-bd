@@ -6,12 +6,12 @@ import TeamCaro from '../../components/carousel/TeamCaro';
 const About = () => {
   return (
     <div className="flex flex-col justify-center items-center">
-      <section className="lg:grid lg:h-screen lg:place-content-center overflow-hidden w-4/5">
+      <section className="lg:grid my-16 lg:place-content-center overflow-hidden w-4/5 border-4 border-red-500 rounded-4xl">
         <a href="#" className="group relative block">
           <img
             alt=""
             src="https://i.pinimg.com/originals/26/45/47/2645475a9eef90f4a1fe67b76ae7d9fa.gif"
-            className="absolute inset-0 h-full w-full object-cover transition-opacity group-hover:opacity-95 rounded-4xl"
+            className="absolute inset-0 h-full w-full object-cover transition-opacity group-hover:opacity-95"
           />
 
           <div className="relative p-10 sm:p-6 lg:p-8">

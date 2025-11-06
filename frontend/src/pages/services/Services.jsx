@@ -2,8 +2,61 @@ import React from 'react'
 import ServiceCardGrid from '../../components/Service/Services';
 
 const Services = () => {
+
+  const headline = "Flawless Execution: Event Planning & Professional Staffing";
+  const tagline =
+    "From corporate launches to grand celebrations, we ensure every detail is handled with precision and professional support.";
+  const hoverText =
+    "We offer full-scale **Event Planning & Management**, including **Corporate Video Production** and **Professional Staff Support**. Our operations team guarantees seamless execution, allowing you to focus on your guests and your brand's presence. Trust CPB to turn your vision into a successful, memorable reality.";
+
+  // Placeholder Image URL adjusted for a professional event setting
+  const printImage =
+    "https://cdn.prod.website-files.com/63a239cf8a90f75cb35a00fd/6883d3a68c2641b28af61e8c_what-is-event-organising.webp";
+
   return (
     <div className="lg:grid lg:place-content-center">
+      <div className="flex flex-col justify-center items-center pt-16">
+        <section className="lg:grid  lg:place-content-center overflow-hidden w-4/5 border-4 border-red-500 rounded-3xl">
+          <a
+            href="https://wa.me/601121404200?text=I%20need%20a%20quote%20for%20the%20Event%20Planning%20&%20Management%20service."
+            target='_blank'
+            className="group relative block"
+          >
+            <img
+              alt="Creative Printing and Physical Asset Design"
+              src={printImage} // Placeholder image URL
+              // NOTE: className is used here instead of class as this is JSX
+              className="absolute inset-0 h-full w-full object-cover transition-opacity group-hover:opacity-95 rounded-xl"
+            />
+
+            <div className="relative p-10 sm:p-6 lg:p-8">
+              {/* PRIMARY HEADLINE */}
+              <p
+                className="font-medium tracking-widest text-red-500! uppercase text-2xl"
+                style={{ textShadow: "2px 2px 4px #000000" }}
+              >
+                {headline}
+              </p>
+
+              {/* TAGLINE */}
+              <p
+                className="text-5xl font-bold text-white sm:text-2xl max-w-2xl"
+                style={{ textShadow: "1px 1px 3px #000000" }}
+              >
+                {tagline}
+              </p>
+
+              {/* HOVER CONTENT */}
+              <div className="mt-28 sm:mt-40 lg:mt-44">
+                <div className="translate-y-8 transform opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 bg-black/70 p-4 rounded-lg">
+                  <p className="text-sm text-white">{hoverText}</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+      </div>
+
       <section className="">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-prose text-center">
@@ -23,7 +76,7 @@ const Services = () => {
           <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8">
               {/* --------------------- CARD 1: STARTER (Digital Launch) --------------------- */}
-              <div className="divide-y divide-red-500 rounded-2xl border border-red-500 hover:shadow-xl hover:shadow-red-500 hover:border-2 transition">
+              <div className="divide-y bg-base-300 divide-red-500 rounded-2xl border border-red-500 hover:shadow-xl hover:shadow-red-500 hover:border-2 transition">
                 <div className="p-6 sm:px-8">
                   <h2 className="text-lg font-bold text-gray-900">
                     Starter
@@ -216,7 +269,7 @@ const Services = () => {
               </div>
 
               {/* --------------------- CARD 2: PRO (Managed Growth) --------------------- */}
-              <div className="divide-y divide-red-500 rounded-2xl border border-red-500 hover:shadow-xl hover:shadow-red-500 hover:border-2 transition">
+              <div className="divide-y bg-base-300 divide-red-500 rounded-2xl border border-red-500 hover:shadow-xl hover:shadow-red-500 hover:border-2 transition">
                 <div className="p-6 sm:px-8">
                   <h2 className="text-lg font-bold text-gray-900">
                     Pro
@@ -410,7 +463,7 @@ const Services = () => {
               </div>
 
               {/* --------------------- CARD 3: ENTERPRISE (Full Ecosystem) --------------------- */}
-              <div className="divide-y divide-red-500 rounded-2xl border border-red-500 hover:shadow-xl hover:shadow-red-500 hover:border-2 transition">
+              <div className="divide-y bg-base-300 divide-red-500 rounded-2xl border border-red-500 hover:shadow-xl hover:shadow-red-500 hover:border-2 transition">
                 <div className="p-6 sm:px-8">
                   <h2 className="text-lg font-bold text-gray-900">
                     Enterprise
@@ -588,7 +641,7 @@ const Services = () => {
       </section>
 
       <section className="">
-        <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+        <div className="mx-auto w-screen max-w-screen-xl px-4 py-10 sm:px-6 sm:pb-24 lg:px-8 lg:pb-32">
           <div className="mx-auto max-w-prose text-center">
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
               Our
@@ -606,7 +659,7 @@ const Services = () => {
       </section>
 
       <section className="">
-        <div className="p-8 md:p-12 lg:px-16 lg:py-24">
+        <div className="p-8 md:p-12 lg:px-16 lg:pb-24">
           <div className="mx-auto max-w-lg text-center">
             <h1 className="text-4xl lg:text-5xl font-bold lg:font-bold text-red-500 dark:text-red-500! md:text-3xl">
               Unlock Exclusive Growth Strategies

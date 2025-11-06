@@ -204,7 +204,7 @@ const ServiceCardGrid = () => {
 
           return (
             <div key={index} className="h-full">
-              <div className="card bg-base-100 w-auto shadow-sm shadow-red-600 hover:shadow-lg hover:shadow-red-500 hover:border-red-500 border hover:border-2 border-red-500 transition duration-300 flex flex-col min-h-full">
+              <div className="card bg-base-300 w-auto shadow-sm shadow-red-600 hover:shadow-lg hover:shadow-red-500 hover:border-red-500 border hover:border-2 border-red-500 transition duration-300 flex flex-col min-h-full">
                 <figure>
                   <img
                     src={service.image}
@@ -253,7 +253,7 @@ const ServiceCardGrid = () => {
                       href={whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-active rounded-full bg-red-600 text-white hover:bg-red-700 border-none transition duration-150"
+                      className=" block rounded-full border border-red-500 bg-red-500 px-3 py-2 text-center font-medium text-white hover:bg-transparent hover:text-red-500 focus:ring-3 focus:outline-hidden"
                     >
                       Order Now
                     </a>
