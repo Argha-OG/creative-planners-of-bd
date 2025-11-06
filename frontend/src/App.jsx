@@ -1,6 +1,6 @@
 import React from "react";
 // Import the components you need for routing
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Router } from "react-router";
 
 // Import layout and pages
 import { MainLayout } from "./Layout/MainLayout.jsx";
@@ -12,11 +12,13 @@ import Services from "./pages/services/Services.jsx";
 
 import "./index.css";
 import ErrorPage from "./pages/ErrorPage.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 const App = () => {
   return (
     // MainLayout now wraps the Routes, keeping the header/footer constant
     <MainLayout>
+      <ScrollToTop/>
       <Routes>
         {/*
           Define all your routes here. 

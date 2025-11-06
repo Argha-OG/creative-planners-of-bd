@@ -16,7 +16,7 @@ const Services = () => {
   return (
     <div className="lg:grid lg:place-content-center">
       <div className="flex flex-col justify-center items-center pt-16">
-        <section className="lg:grid  lg:place-content-center overflow-hidden w-4/5 border-4 border-red-500 rounded-3xl">
+        <section className="lg:grid  lg:place-content-center overflow-hidden w-4/5 border-4 border-red-500 rounded-3xl hidden sm:visible">
           <a
             href="https://wa.me/601121404200?text=I%20need%20a%20quote%20for%20the%20Event%20Planning%20&%20Management%20service."
             target='_blank'

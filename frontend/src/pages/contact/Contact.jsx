@@ -20,24 +20,25 @@ const Contact = () => {
               <a
                 className="inline-block rounded border border-red-600 bg-red-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-red-700"
                 href="https://wa.me/601139638206?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
-                target='_blank'
+                target="_blank"
               >
                 Get In Touch Now
               </a>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mt-16">
-            <div className="google-map-codevh-40">
+            <div className="google-map-codevh-40 order-2 lg:order-1">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d736.1406376701847!2d101.71018004409835!3d3.027603616238121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdcb01c2fc4eb9%3A0x5aeef78f97ebaa51!2sThe%20Academia%20Block%20B%20%40%20South%20City%20Apartment!5e1!3m2!1sen!2smy!4v1761290879564!5m2!1sen!2smy"
                 width="600"
                 height="490"
-                allowfullscreen=""
+                allowFullScreen=""
                 aria-hidden="false"
-                tabindex="0"
-                className="rounded-2xl border-4 border-red-600"
+                tabIndex="0"
+                className="rounded-2xl border-4 border-red-600 w-full"
               />
             </div>
+
             <div className="rounded">
               <div class="lg:col-span-1">
                 <div class="bg-red-600 p-8 rounded-xl shadow-2xl h-full flex flex-col justify-between">
