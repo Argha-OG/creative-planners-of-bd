@@ -73,7 +73,9 @@ const HomePage = () => {
         </div>
       </section>
       <section className="flex flex-col justify-center items-center">
-        <LogoCaro />
+        <div className="w-4/5">
+          <LogoCaro />
+        </div>
       </section>
       <section className=" lg:grid lg:h-screen lg:place-content-center">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
