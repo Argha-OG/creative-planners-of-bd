@@ -7,7 +7,7 @@ import { Link } from "react-router";
 const HomePage = () => {
   return (
     <div className="">
-      <section className="lg:grid lg:h-screen lg:place-content-center overflow-hidden">
+      <section className="lg:grid lg:h-screen lg:max-w-full lg:place-content-center overflow-hidden sm:max-w-full">
         <div
           role="alert"
           className="alert alert-vertical sm:alert-horizontal mt-14 text-red-500 rounded-full"
@@ -35,7 +35,7 @@ const HomePage = () => {
           </button>
         </div>
 
-        <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 md:grid md:grid-cols-2 md:items-center md:gap-4 lg:px-8 lg:py-32 ">
+        <div className="mx-auto w-screen px-4 py-16 sm:px-6 sm:py-24 md:grid md:grid-cols-2 md:items-center md:gap-4 lg:px-8 lg:py-32 ">
           <div className="max-w-prose text-left">
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl ">
               We Grow Your
@@ -50,7 +50,7 @@ const HomePage = () => {
               Malaysia.
             </p>
 
-            <div className="mt-4 flex gap-4 sm:mt-6">
+            <div className="mt-4 flex gap-4 my-6 sm:my-6">
               <a
                 className="inline-block rounded border border-red-600 bg-red-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-red-700"
                 href="https://wa.me/601121404200?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
@@ -69,7 +69,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <img className=" w-full h-auto rounded-full" src={HeroImg} alt="" />
+          <img className=" w-full h-auto rounded-full sm:mt-2" src={HeroImg} alt="" />
         </div>
       </section>
       <section className="flex flex-col justify-center items-center">
@@ -90,7 +90,7 @@ const HomePage = () => {
               Your all-in-one path to market dominance and measurable ROI.
             </p>
           </div>
-          <div className="mt-4 flex justify-center gap-4 sm:mt-6 w-full">
+          <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4 sm:mt-6 w-full">
             <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg  dark:shadow-sm dark:shadow-red-600">
               <img
                 alt=""
@@ -177,7 +177,7 @@ const HomePage = () => {
               of collective experience.
             </p>
           </div>
-          <div className="h-fit w-full flex justify-center">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap justify-center items-center">
             <div className="chooseus bg-red-50 h-74 w-74 rounded-full border-8 border-red-600 hover:shadow-md hover:shadow-red-600 hover:z-1 transition duration-300">
               <div className="h-full w-full align-middle text-center flex flex-col justify-center items-center">
                 <svg
@@ -233,7 +233,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="chooseus bg-red-50 h-74 w-74 rounded-full border-8 border-red-600 hover:shadow-md hover:shadow-red-600 hover:z-1 transition duration-300 ml-[-46px]">
+            <div className="chooseus bg-red-50 h-74 w-74 rounded-full border-8 border-red-600 hover:shadow-md hover:shadow-red-600 hover:z-1 transition duration-300 sm:ml-[-46px]">
               <div className="h-full w-full align-middle text-center flex flex-col justify-center items-center">
                 <svg
                   className="h-10 w-10 mb-3"
@@ -288,7 +288,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="chooseus bg-red-50 h-74 w-74 rounded-full border-8 border-red-600 hover:shadow-md hover:shadow-red-600 hover:z-1 transition duration-300 ml-[-46px]">
+            <div className="chooseus bg-red-50 h-74 w-74 rounded-full border-8 border-red-600 hover:shadow-md hover:shadow-red-600 hover:z-1 transition duration-300 sm:ml-[-46px]">
               <div className="h-full w-full align-middle text-center flex flex-col justify-center items-center">
                 <svg
                   className="h-10 w-10 mb-3"
@@ -343,7 +343,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="chooseus bg-red-50 h-74 w-74 rounded-full border-8 border-red-600 hover:shadow-md hover:shadow-red-600 hover:z-1 transition duration-300 ml-[-46px]">
+            <div className="chooseus bg-red-50 h-74 w-74 rounded-full border-8 border-red-600 hover:shadow-md hover:shadow-red-600 hover:z-1 transition duration-300 sm:ml-[-46px]">
               <div className="h-full w-full align-middle text-center flex flex-col justify-center items-center">
                 <svg
                   className="h-10 w-10 mb-3"

@@ -7,7 +7,7 @@ import "./nav.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-transparent backdrop-blur-xl shadow-sm px-16 shadow-red-400 top-0 sticky z-50 ">
+    <div className="navbar bg-transparent backdrop-blur-xl shadow-sm sm:px-0 lg:px-16 sm:w-full shadow-red-400 top-0 sticky z-50 ">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,7 +52,8 @@ const Navbar = () => {
           className="btn btn-ghost text-xl text-red-600 overflow-hidden"
         >
           <img src={Logo} alt="CPB" className="h-auto w-10" />
-          Creative Planners Of Bangladesh
+          <div className="hidden sm:block">
+          Creative Planners Of Bangladesh</div>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
