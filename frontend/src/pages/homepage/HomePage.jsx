@@ -417,8 +417,8 @@ const HomePage = () => {
             </p>
           </div>
           <div className="h-fit text-pretty content-center flex justify-center items-center">
-            <div className="join join-vertical bg-base-100 flex  justify-center items-center">
-              <div className="collapse collapse-arrow join-item border-base-300 border rounded-t-2xl">
+            <div className="join join-vertical bg-base-100 flex border border-red-600 rounded-2xl  justify-center items-center">
+              <div className="collapse collapse-arrow join-item border border-red-600 rounded-t-2xl">
                 <input type="radio" name="my-accordion-4" defaultChecked />
                 <div className="collapse-title font-semibold">
                   1. What is the scope of your services?
@@ -430,7 +430,7 @@ const HomePage = () => {
                   & Management
                 </div>
               </div>
-              <div className="collapse collapse-arrow join-item border-base-300 border">
+              <div className="collapse collapse-arrow join-item border border-red-600">
                 <input type="radio" name="my-accordion-4" />
                 <div className="collapse-title font-semibold">
                   2. Who will manage my campaigns and strategy?
@@ -442,7 +442,7 @@ const HomePage = () => {
                   measurable results.
                 </div>
               </div>
-              <div className="collapse collapse-arrow join-item border-base-300 border">
+              <div className="collapse collapse-arrow join-item border border-red-600">
                 <input type="radio" name="my-accordion-4" />
                 <div className="collapse-title font-semibold">
                   3. How much content is provided monthly?
@@ -454,7 +454,7 @@ const HomePage = () => {
                   and Unlimited Poster & Video Posting.
                 </div>
               </div>
-              <div className="collapse collapse-arrow join-item border-base-300 border">
+              <div className="collapse collapse-arrow join-item border border-red-600">
                 <input type="radio" name="my-accordion-4" />
                 <div className="collapse-title font-semibold">
                   4. Is your client support truly 24/7?
@@ -465,7 +465,7 @@ const HomePage = () => {
                   continuous client engagement, and timely reports.
                 </div>
               </div>
-              <div className="collapse collapse-arrow join-item border-base-300 border">
+              <div className="collapse collapse-arrow join-item border border-red-600">
                 <input type="radio" name="my-accordion-4" />
                 <div className="collapse-title font-semibold">
                   5. What is included in the Digital Business Setup starter
@@ -479,7 +479,7 @@ const HomePage = () => {
                   Campaign & Boosting.
                 </div>
               </div>
-              <div className="collapse collapse-arrow join-item border-base-300 border">
+              <div className="collapse collapse-arrow join-item border border-red-600">
                 <input type="radio" name="my-accordion-4" />
                 <div className="collapse-title font-semibold">
                   6. Beyond digital, what physical/creative services do you
@@ -492,7 +492,7 @@ const HomePage = () => {
                   Management and Corporate Video Production.
                 </div>
               </div>
-              <div className="collapse collapse-arrow join-item border-base-300 border">
+              <div className="collapse collapse-arrow join-item border border-red-600">
                 <input type="radio" name="my-accordion-4" />
                 <div className="collapse-title font-semibold">
                   7. How affordable and transparent are your packages?
@@ -504,12 +504,12 @@ const HomePage = () => {
                   metrics.
                 </div>
               </div>
-              <div className="collapse collapse-arrow join-item border-base-300 border">
+              <div className="collapse collapse-arrow join-item">
                 <input type="radio" name="my-accordion-4" />
                 <div className="collapse-title font-semibold">
                   8. Where are your company headquarters located?
                 </div>
-                <div className="collapse-content text-sm bg-red-200 chooseus">
+                <div className="collapse-content text-sm bg-red-200 chooseus rounded-b-2xl">
                   Our Head Office is in Kuala Lumpur, Malaysia. We also maintain
                   a presence with our Bangladesh Office in Dhaka.
                 </div>
