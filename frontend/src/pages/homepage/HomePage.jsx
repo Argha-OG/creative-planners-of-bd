@@ -11,7 +11,7 @@ const HomePage = () => {
         <div
           className="mx-auto w-screen px-4 py-16 sm:px-6 sm:py-24 
                 flex flex-col-reverse md:grid md:grid-cols-2 md:items-center md:gap-4 
-                lg:px-8 lg:py-32 justify-center"
+                lg:px-8 lg:py-32 justify-items-center"
         >
           <div className="max-w-prose text-left">
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl ">
@@ -29,25 +29,25 @@ const HomePage = () => {
 
             <div className="mt-4 flex gap-4 my-6 sm:my-6">
               <a
-                className="inline-block rounded border border-red-600 bg-red-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-red-700"
+                className="inline-block rounded-full border border-red-600 bg-red-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-red-700"
                 href="https://wa.me/601121404200?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
                 target="_blank"
               >
-                START YOUR DIGITAL GROWTH
+                Start Growing
               </a>
 
               <a
-                className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-black!"
+                className="inline-block rounded-full border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-black!"
                 href="https://wa.me/601139638206?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
                 target="_blank"
               >
-                GET FREE CONSULTATION
+                Free Consultation
               </a>
             </div>
           </div>
 
           <img
-            className=" w-full h-auto rounded-full sm:mt-2"
+            className=" w-full h-auto rounded-full sm:mt-2 sm:mb-3"
             src={HeroImg}
             alt=""
           />
