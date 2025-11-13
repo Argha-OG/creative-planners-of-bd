@@ -15,11 +15,14 @@ import "./index.css";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
+import UserLogin from "./pages/Login/UserLogin.jsx";
+import UserRegister from "./pages/Login/UserRegister.jsx";
+
 const App = () => {
   return (
     // MainLayout now wraps the Routes, keeping the header/footer constant
     <MainLayout>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         {/*
           Define all your routes here. 
@@ -30,6 +33,10 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/reviews" element={<Review />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/*  ADMIN/LOGIN ROUTE (The entry point to the dashboard) */}
+        <Route path="/user/login" element={<UserLogin />} />
+        <Route path="/user/register" element={<UserRegister />} />
 
         {/* Optional: Add a 404/Not Found route */}
         <Route path="*" element={<ErrorPage />} />

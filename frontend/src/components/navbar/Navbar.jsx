@@ -1,6 +1,8 @@
 import React from "react";
-// 🚨 CRITICAL FIX: Ensure this exact import is here!
+
 import { Link } from "react-router";
+
+import { User } from "lucide-react";
 import Logo from "./../../assets/cpb.jpg";
 import ThemeToggle from "../Buttons/Theme-controller";
 import "./nav.css";
@@ -104,12 +106,24 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-4">
+        
         <ThemeToggle />
+        {/* NEW LOGIN BUTTON (User Access) */}
+        <Link
+          to="/user/login"
+          className="btn btn-ghost btn-circle border-2 border-red-500 hover:border-red-600 text-gray-700 hover:bg-base-100 transition duration-150"
+          title="User Login"
+        >
+          <User className="w-6 h-6" />
+        </Link>
+
+        
         {/* CTA BUTTON LINK */}
         <Link
           to="https://wa.me/601121404200?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
           className="btn bg-red-500 hover:bg-red-700 rounded-3xl font-bold text-white"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Book A Consultant
         </Link>
