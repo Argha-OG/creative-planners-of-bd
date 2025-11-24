@@ -6,7 +6,7 @@ export function MainLayout({ children }) {
   return (
     <div className="scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <Navbar />
-      <div>{children}</div>
+      <div className="pt-16">{children}</div>
       <Footer />
     </div>
   );

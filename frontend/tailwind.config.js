@@ -11,22 +11,22 @@ export default {
       
       {
         light: {
-          primary: "#2563eb",
+          primary: "#ef4444", // Red-500
           secondary: "#7c3aed",
           accent: "#10b981",
           neutral: "#3d4451",
-          "base-100": "#ffffff",
-          "base-content": "#1f2937",
+          "base-100": "#ffffff", // White
+          "base-content": "#000000", // Black text
         },
       },
       {
         dark: {
-          primary: "#38bdf8",
+          primary: "#ef4444", // Red-500
           secondary: "#a78bfa",
           accent: "#34d399",
           neutral: "#1e293b",
-          "base-100": "#0f172a",
-          "base-content": "#f8fafc",
+          "base-100": "#000000", // Black
+          "base-content": "#ffffff", // White text
         },
       },
     ],

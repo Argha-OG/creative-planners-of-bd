@@ -1,15 +1,33 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { Link } from "react-router";
-
 import { User } from "lucide-react";
 import Logo from "./../../assets/cpb.jpg";
 import ThemeToggle from "../Buttons/Theme-controller";
 import "./nav.css";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  });
+
   return (
-    <div className="navbar bg-transparent backdrop-blur-xl shadow-sm sm:px-0 lg:px-16 sm:w-full shadow-red-400 top-0 sticky z-50 ">
+    <motion.div
+      initial={{ y: -40, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+      className={`navbar fixed top-0 z-50 transition-all duration-200 ${isScrolled
+        ? "bg-base-100/80 backdrop-blur-md shadow-md shadow-red-500 py-2"
+        : "bg-transparent py-4"
+        } sm:px-0 lg:px-16 sm:w-full`}
+    >
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,6 +67,9 @@ const Navbar = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
           </ul>
         </div>
         {/* LOGO LINK */}
@@ -66,7 +87,7 @@ const Navbar = () => {
           <li className="">
             <Link
               to="/"
-              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-base-content text-sm transition-colors duration-300"
             >
               Home
             </Link>
@@ -74,7 +95,7 @@ const Navbar = () => {
           <li className="">
             <Link
               to="/about"
-              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-base-content text-sm transition-colors duration-300"
             >
               About Us
             </Link>
@@ -82,7 +103,7 @@ const Navbar = () => {
           <li className="">
             <Link
               to="/services"
-              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-base-content text-sm transition-colors duration-300"
             >
               Services
             </Link>
@@ -90,7 +111,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/reviews"
-              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-base-content text-sm transition-colors duration-300"
             >
               Reviews
             </Link>
@@ -98,37 +119,47 @@ const Navbar = () => {
           <li>
             <Link
               to="/contact"
-              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-black text-sm"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-base-content text-sm transition-colors duration-300"
             >
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/blog"
+              className="hover:bg-red-500 hover:text-white btn btn-soft btn-error bg-transparent border-0 text-base-content text-sm transition-colors duration-300"
+            >
+              Blog
             </Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end space-x-4">
-        
+
         <ThemeToggle />
         {/* NEW LOGIN BUTTON (User Access) */}
         <Link
           to="/user/login"
-          className="btn btn-ghost btn-circle border-2 border-red-500 hover:border-red-600 text-gray-700 hover:bg-base-100 transition duration-150"
+          className="btn btn-ghost btn-circle border-2 border-red-500 hover:border-red-600 text-base-content hover:bg-base-100 transition duration-150"
           title="User Login"
         >
           <User className="w-6 h-6" />
         </Link>
 
-        
+
         {/* CTA BUTTON LINK */}
-        <Link
-          to="https://wa.me/601121404200?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
-          className="btn bg-red-500 hover:bg-red-700 rounded-3xl font-bold text-white"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Book A Consultant
-        </Link>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Link
+            to="https://wa.me/601121404200?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
+            className="btn bg-red-500 hover:bg-red-700 rounded-3xl font-bold text-white border-none"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book A Consultant
+          </Link>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -9,6 +9,8 @@ import About from "./pages/aboutpage/About.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import Review from "./pages/reviews/Review.jsx";
 import Services from "./pages/services/Services.jsx";
+import BlogPage from "./pages/blog/BlogPage.jsx";
+import BlogPost from "./pages/blog/BlogPost.jsx";
 
 
 import "./index.css";
@@ -33,6 +35,8 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/reviews" element={<Review />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
 
         {/*  ADMIN/LOGIN ROUTE (The entry point to the dashboard) */}
         <Route path="/user/login" element={<UserLogin />} />

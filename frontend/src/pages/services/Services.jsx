@@ -1,5 +1,6 @@
 import React from 'react'
 import ServiceCardGrid from '../../components/Service/Services';
+import SEO from "../../components/SEO";
 
 const Services = () => {
 
@@ -15,6 +16,11 @@ const Services = () => {
 
   return (
     <div className="lg:grid lg:place-content-center">
+      <SEO
+        title="Our Services"
+        description="Explore our comprehensive services including Digital Launch, Monthly Marketing Management, and Event Planning."
+        keywords="Services, Digital Marketing, Event Management, Branding, CPB Services"
+      />
       <div className="flex flex-col justify-center items-center pt-16">
         <section className="lg:grid  lg:place-content-center overflow-hidden w-4/5 border-4 border-red-500 rounded-3xl hidden sm:visible">
           <a

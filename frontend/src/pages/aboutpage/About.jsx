@@ -2,10 +2,16 @@ import React from 'react'
 import './About.css'
 import LogoCaro from '../../components/carousel/LogoCaro';
 import TeamCaro from '../../components/carousel/TeamCaro';
+import SEO from "../../components/SEO";
 
 const About = () => {
   return (
     <div className="flex flex-col justify-center items-center">
+      <SEO
+        title="About Us"
+        description="Learn about Creative Planners of Bangladesh (CPB), the architects of digital and event success."
+        keywords="About CPB, Marketing Agency, Event Planners, Digital Strategy"
+      />
       <section className="lg:grid my-16 lg:place-content-center overflow-hidden hidden sm:visible w-4/5 border-4 border-red-500 rounded-4xl">
         <a href="#" className="group relative block">
           <img

@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import SEO from "../../components/SEO";
 
 // --- DYNAMICALLY IMPORTED LOGOS (FROM ASSETS FOLDER) ---
 // These are necessary for Vite/React to resolve the correct paths to your images.
@@ -127,8 +128,15 @@ const Review = () => {
   const overallRating = 4.5;
   const reviewCount = clientReviews.length;
 
+
+
   return (
     <div className=" pt-16 pb-24 sm:pt-24">
+      <SEO
+        title="Client Reviews"
+        description="See what our clients say about Creative Planners of Bangladesh. Rated 4.5/5 based on verified reviews."
+        keywords="Reviews, Client Testimonials, CPB Reviews, Customer Feedback"
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header and Overall Rating */}
         <div className="text-center mb-16">

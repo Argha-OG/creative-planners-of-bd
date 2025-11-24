@@ -1,8 +1,14 @@
 import React from 'react'
+import SEO from "../../components/SEO";
 
 const Contact = () => {
   return (
     <div className="lg:grid lg:h-auto lg:place-content-center">
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Creative Planners of Bangladesh for a free consultation. Serving Bangladesh and Malaysia."
+        keywords="Contact CPB, Free Consultation, Marketing Inquiry, Event Booking"
+      />
       <section className="">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-prose text-center">

@@ -3,17 +3,30 @@ import HeroImg from "./../../assets/herox.jpg";
 import TeamCaro from "../../components/carousel/TeamCaro";
 import LogoCaro from "../../components/carousel/LogoCaro";
 import { Link } from "react-router";
+import { motion } from "framer-motion";
+
+import SEO from "../../components/SEO";
 
 const HomePage = () => {
   return (
     <div className="">
+      <SEO
+        title="Home"
+        description="Creative Planners of Bangladesh - Full service Marketing, Business Tech Developer Experts & Event Management agency."
+        keywords="Marketing, Event Management, Business Growth, CPB, Bangladesh, Malaysia"
+      />
       <section className="lg:grid lg:h-screen lg:max-w-full lg:place-content-center overflow-hidden sm:max-w-full">
         <div
           className="mx-auto w-screen px-4 py-16 sm:px-6 sm:py-24 
                 flex flex-col-reverse md:grid md:grid-cols-2 md:items-center md:gap-4 
                 lg:px-8 lg:py-32 justify-items-center"
         >
-          <div className="max-w-prose text-left">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-prose text-left"
+          >
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl ">
               We Grow Your
               <strong className="text-red-600"> Business </strong>
@@ -28,25 +41,32 @@ const HomePage = () => {
             </p>
 
             <div className="mt-4 flex gap-4 my-6 sm:my-6">
-              <a
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 className="inline-block rounded-full border border-red-600 bg-red-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-red-700"
                 href="https://wa.me/601121404200?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
                 target="_blank"
               >
                 Start Growing
-              </a>
+              </motion.a>
 
-              <a
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 className="inline-block rounded-full border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-black!"
                 href="https://wa.me/601139638206?text=Hello%20CPB,%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20free%20consultation%20on%20your%20services.%0A%0AClient%20Name:%0AInterested%20In:"
                 target="_blank"
               >
                 Free Consultation
-              </a>
+              </motion.a>
             </div>
-          </div>
+          </motion.div>
 
-          <img
+          <motion.img
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className=" w-full h-auto rounded-full sm:mt-2 sm:mb-3"
             src={HeroImg}
             alt=""
@@ -60,7 +80,13 @@ const HomePage = () => {
       </section>
       <section className=" lg:grid lg:h-screen lg:place-content-center">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
-          <div className="mx-auto max-w-prose text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mx-auto max-w-prose text-center"
+          >
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
               The CPB Blueprint <br />
               for
@@ -70,9 +96,16 @@ const HomePage = () => {
             <p className="mt-4 mb-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
               Your all-in-one path to market dominance and measurable ROI.
             </p>
-          </div>
+          </motion.div>
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4 sm:mt-6 w-full">
-            <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg  dark:shadow-sm dark:shadow-red-600">
+            <motion.article
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              whileHover={{ scale: 1.03 }}
+              className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg  dark:shadow-sm dark:shadow-red-600"
+            >
               <img
                 alt=""
                 src="https://i.pinimg.com/736x/82/02/f6/8202f64a040f6f1caf3cbf93f04e044a.jpg"
@@ -93,9 +126,16 @@ const HomePage = () => {
                   including Unlimited Ad Boosting and full platform integration.
                 </p>
               </div>
-            </article>
+            </motion.article>
 
-            <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg dark:shadow-sm dark:shadow-red-600">
+            <motion.article
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              whileHover={{ scale: 1.03 }}
+              className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg dark:shadow-sm dark:shadow-red-600"
+            >
               <img
                 alt=""
                 src="https://i.pinimg.com/736x/30/92/cd/3092cd1dbe7bb9fcae39fd06ad06bc93.jpg"
@@ -116,9 +156,16 @@ const HomePage = () => {
                   continuously manage all Ad Campaigns.
                 </p>
               </div>
-            </article>
+            </motion.article>
 
-            <article className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg dark:shadow-sm dark:shadow-red-600">
+            <motion.article
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              whileHover={{ scale: 1.03 }}
+              className="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg dark:shadow-sm dark:shadow-red-600"
+            >
               <img
                 alt=""
                 src="https://i.pinimg.com/1200x/63/74/84/637484376e86a58a4f24ba3019f558b7.jpg"
@@ -139,14 +186,20 @@ const HomePage = () => {
                   complete with staffing and Corporate Video Production.
                 </p>
               </div>
-            </article>
+            </motion.article>
           </div>
         </div>
       </section>
 
       <section className=" lg:grid lg:h-screen lg:place-content-center">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
-          <div className="mx-auto max-w-prose text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mx-auto max-w-prose text-center"
+          >
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
               Why Partner with
               <strong className="text-red-600"> CPB </strong>?
@@ -157,7 +210,7 @@ const HomePage = () => {
               growth ecosystem backed by strategy, transparency, and two decades
               of collective experience.
             </p>
-          </div>
+          </motion.div>
           <div className="flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap justify-center items-center">
             <div className="chooseus bg-red-50 h-74 w-74 rounded-full border-8 border-red-600 hover:shadow-md hover:shadow-red-600 hover:z-1 transition duration-300">
               <div className="h-full w-full align-middle text-center flex flex-col justify-center items-center">
@@ -385,7 +438,13 @@ const HomePage = () => {
 
       <section className=" lg:grid lg:h-screen lg:place-content-center">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
-          <div className="mx-auto max-w-prose text-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mx-auto max-w-prose text-center"
+          >
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
               Meet The
               <strong className="text-red-600"> CPB </strong>
@@ -397,16 +456,28 @@ const HomePage = () => {
               strategists, we bring comprehensive expertise to transform your
               brand.
             </p>
-          </div>
-          <div className="h-fit w-full flex justify-center items-center">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="h-fit w-full flex justify-center items-center"
+          >
             <TeamCaro />
-          </div>
+          </motion.div>
         </div>
       </section>
 
       <section className=" lg:grid lg:h-screen lg:place-content-center">
         <div className="mx-auto w-screen max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
-          <div className="mx-auto max-w-prose text-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mx-auto max-w-prose text-center"
+          >
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
               <strong className="text-red-600"> Questions You May Have </strong>
             </h1>
@@ -415,8 +486,14 @@ const HomePage = () => {
               Quick answers about our complete service ecosystem and approach to
               growth.
             </p>
-          </div>
-          <div className="h-fit text-pretty content-center flex justify-center items-center">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="h-fit text-pretty content-center flex justify-center items-center"
+          >
             <div className="join join-vertical bg-base-100 flex border border-red-600 rounded-2xl  justify-center items-center">
               <div className="collapse collapse-arrow join-item border border-red-600 rounded-t-2xl">
                 <input type="radio" name="my-accordion-4" defaultChecked />
@@ -515,7 +592,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>
